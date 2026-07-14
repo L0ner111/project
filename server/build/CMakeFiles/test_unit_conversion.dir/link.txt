@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/test_unit_conversion.dir/link.d CMakeFiles/test_unit_conversion.dir/test/test_unit_conversion.cpp.o CMakeFiles/test_unit_conversion.dir/src/unit_conversion.c.o -o /home/lrd/C_C++_programs/20_test/project/server/bin/test_unit_conversion  -lgtest -lgtest_main -lm

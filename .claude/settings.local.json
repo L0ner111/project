@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mysqladmin ping *)",
+      "Bash(mysqld --version)",
+      "Bash(mysql -u root -e \"SELECT 1;\")",
+      "Bash(cmake ..)",
+      "Bash(make)"
+    ]
+  }
+}

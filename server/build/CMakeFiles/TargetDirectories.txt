@@ -1,0 +1,5 @@
+/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles/server.dir
+/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles/test_unit_conversion.dir
+/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles/test.dir
+/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles/edit_cache.dir
+/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles/rebuild_cache.dir

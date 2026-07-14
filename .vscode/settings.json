@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "sensor_data.h": "c",
+        "dongtaicunchu.h": "c",
+        "constant.h": "c",
+        "analysis_xml.h": "c",
+        "coord_trans.h": "c",
+        "math.h": "c",
+        "tool.h": "c",
+        "matrix.h": "c",
+        "types.h": "c",
+        "stdio.h": "c",
+        "interfere.h": "c",
+        "dec2bin.h": "c",
+        "inet.h": "c",
+        "endian.h": "c"
+    },
+    "cmake.ignoreCMakeListsMissing": true
+}

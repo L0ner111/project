@@ -1,0 +1,3 @@
+/home/lrd/C_C++_programs/20_test/project/client/build/CMakeFiles/client.dir
+/home/lrd/C_C++_programs/20_test/project/client/build/CMakeFiles/edit_cache.dir
+/home/lrd/C_C++_programs/20_test/project/client/build/CMakeFiles/rebuild_cache.dir
