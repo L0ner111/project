@@ -10,6 +10,7 @@
 #include <stdint.h>
 #include <time.h>
 #include <sys/time.h>
+#include "mysql_db.h"
 
 // #define PORT 5005
 // #define BUFFER_SIZE 1024
@@ -256,6 +257,14 @@ int main() {
     Queue* queue = initQueue();
     double avg = 0;
     int zero_count = 0;
+    static int line_count = 0;  // 静态变量保存状态
+
+    /* ===== 初始化 MySQL 连接 ===== */
+    MYSQL* db_conn = db_connect();
+    if (db_conn == NULL) {
+        printf("⚠️ 警告: MySQL 连接失败，将跳过数据库写入，继续运行\n");
+        /* 不退出程序，允许离线运行 */
+    }
 
     while (1) {
         cnt ++;
@@ -342,7 +351,7 @@ int main() {
         /* 算法 */
         uint16_t frame[45];
         float values[19];
-        static int line_count = 0;  // 静态变量保存状态
+        
 
 
 
@@ -433,6 +442,17 @@ int main() {
         servo_data[line_count].timestamp = processTimestamp(values[16]);
         servo_data[line_count].azimuth = processAngle(values[17]);
         servo_data[line_count].elevation = processAngle(values[18]);
+
+        /* ===== 写入解析结果到 MySQL ===== */
+        if (db_conn != NULL) {
+            db_insert_parsed_data(db_conn, line_count,
+                                &photoelectric_data[line_count],
+                                &laser_data[line_count],
+                                &radar_data1[line_count],
+                                &radar_data2[line_count],
+                                &servo_data[line_count],
+                                &full_photoelectric_data[line_count]);
+        }
 
         /*平滑处理0910*/
         // 向队列中添加元素
@@ -683,6 +703,16 @@ int main() {
         // 将融合后的方位/仰角与本地时间（毫秒级）保存到文本文件，列：系统时间 方位 俯仰
         save_sensor_fusion(&sensor_fusion_polar, aligned_data);
 
+        /* ===== 写入融合结果到 MySQL ===== */
+        if (db_conn != NULL) {
+            db_insert_fusion_result(db_conn, line_count++,
+                                    &sensor1_polar, 
+                                    &sensor2_polar,
+                                    &sensor_fusion_polar, 
+                                    aligned_data);
+        }
+
+
         // 极坐标信息
         float r_jiguang = values[5], a_tv = values[2] + values[17], e_tv = values[3] + values[18];
         float r_radar = values[10], a_radar = values[8], e_radar = values[9];
@@ -754,6 +784,9 @@ int main() {
 
         free(binary);
     }
+
+    /* ===== 关闭 MySQL 连接 ===== */
+    db_disconnect(db_conn);
 
     close(sockfd);
     return 0;

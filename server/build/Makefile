@@ -423,6 +423,30 @@ src/matrix2.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/matrix2.c.s
 .PHONY : src/matrix2.c.s
 
+src/mysql_db.o: src/mysql_db.c.o
+.PHONY : src/mysql_db.o
+
+# target to build an object file
+src/mysql_db.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/mysql_db.c.o
+.PHONY : src/mysql_db.c.o
+
+src/mysql_db.i: src/mysql_db.c.i
+.PHONY : src/mysql_db.i
+
+# target to preprocess a source file
+src/mysql_db.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/mysql_db.c.i
+.PHONY : src/mysql_db.c.i
+
+src/mysql_db.s: src/mysql_db.c.s
+.PHONY : src/mysql_db.s
+
+# target to generate assembly for a file
+src/mysql_db.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/mysql_db.c.s
+.PHONY : src/mysql_db.c.s
+
 src/mystring.o: src/mystring.c.o
 .PHONY : src/mystring.o
 
@@ -687,6 +711,9 @@ help:
 	@echo "... src/matrix2.o"
 	@echo "... src/matrix2.i"
 	@echo "... src/matrix2.s"
+	@echo "... src/mysql_db.o"
+	@echo "... src/mysql_db.i"
+	@echo "... src/mysql_db.s"
 	@echo "... src/mystring.o"
 	@echo "... src/mystring.i"
 	@echo "... src/mystring.s"

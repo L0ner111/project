@@ -88,12 +88,12 @@ clean: CMakeFiles/test_unit_conversion.dir/clean
 CMakeFiles/server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles 0
 .PHONY : CMakeFiles/server.dir/rule
@@ -105,7 +105,7 @@ server: CMakeFiles/server.dir/rule
 # codegen rule for target.
 CMakeFiles/server.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Finished codegen for target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Finished codegen for target server"
 .PHONY : CMakeFiles/server.dir/codegen
 
 # clean rule for target.
@@ -120,7 +120,7 @@ CMakeFiles/server.dir/clean:
 CMakeFiles/test_unit_conversion.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_conversion.dir/build.make CMakeFiles/test_unit_conversion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_conversion.dir/build.make CMakeFiles/test_unit_conversion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=21,22,23 "Built target test_unit_conversion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=22,23,24 "Built target test_unit_conversion"
 .PHONY : CMakeFiles/test_unit_conversion.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,7 +137,7 @@ test_unit_conversion: CMakeFiles/test_unit_conversion.dir/rule
 # codegen rule for target.
 CMakeFiles/test_unit_conversion.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_unit_conversion.dir/build.make CMakeFiles/test_unit_conversion.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=21,22,23 "Finished codegen for target test_unit_conversion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=22,23,24 "Finished codegen for target test_unit_conversion"
 .PHONY : CMakeFiles/test_unit_conversion.dir/codegen
 
 # clean rule for target.

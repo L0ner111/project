@@ -17,7 +17,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 add_executable(server ${SRC_LIST})
 
 # 链接数学库，供代码中的数学函数使用。
-target_link_libraries(server m)
+target_link_libraries(server m mysqlclient)
 
 # 启用 CTest 测试能力，后面才能注册和运行测试。
 enable_testing()

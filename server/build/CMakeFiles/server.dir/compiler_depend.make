@@ -8,14 +8,21 @@
   /usr/lib/x86_64-linux-gnu/libc.so \
   /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 \
   /usr/lib/x86_64-linux-gnu/libm.so \
+  /usr/lib/x86_64-linux-gnu/libmysqlclient.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a \
   /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so \
   /usr/lib/x86_64-linux-gnu/libc.so.6 \
   /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
+  /usr/lib/x86_64-linux-gnu/libcrypto.so.3 \
   /usr/lib/x86_64-linux-gnu/libm.so.6 \
   /usr/lib/x86_64-linux-gnu/libmvec.so.1 \
+  /usr/lib/x86_64-linux-gnu/libresolv.so.2 \
+  /usr/lib/x86_64-linux-gnu/libssl.so.3 \
+  /usr/lib/x86_64-linux-gnu/libstdc++.so.6 \
+  /usr/lib/x86_64-linux-gnu/libz.so.1 \
+  /usr/lib/x86_64-linux-gnu/libzstd.so.1 \
   CMakeFiles/server.dir/src/analysis_xml.c.o \
   CMakeFiles/server.dir/src/coord_trans.c.o \
   CMakeFiles/server.dir/src/dec2bin.c.o \
@@ -27,6 +34,7 @@
   CMakeFiles/server.dir/src/kalman.c.o \
   CMakeFiles/server.dir/src/matrix.c.o \
   CMakeFiles/server.dir/src/matrix2.c.o \
+  CMakeFiles/server.dir/src/mysql_db.c.o \
   CMakeFiles/server.dir/src/mystring.c.o \
   CMakeFiles/server.dir/src/peizhun_while_dabao.c.o \
   CMakeFiles/server.dir/src/pinghua.c.o \
@@ -895,6 +903,101 @@ CMakeFiles/server.dir/src/matrix2.c.o: /home/lrd/C_C++_programs/20_test/project/
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h
 
+CMakeFiles/server.dir/src/mysql_db.c.o: /home/lrd/C_C++_programs/20_test/project/server/src/mysql_db.c \
+  /home/lrd/C_C++_programs/20_test/project/server/include/config.h \
+  /home/lrd/C_C++_programs/20_test/project/server/include/matrix.h \
+  /home/lrd/C_C++_programs/20_test/project/server/include/mysql_db.h \
+  /home/lrd/C_C++_programs/20_test/project/server/include/sensor_data.h \
+  /home/lrd/C_C++_programs/20_test/project/server/include/types.h \
+  /usr/include/alloca.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/math.h \
+  /usr/include/mysql/client_plugin.h \
+  /usr/include/mysql/errmsg.h \
+  /usr/include/mysql/field_types.h \
+  /usr/include/mysql/my_command.h \
+  /usr/include/mysql/my_compress.h \
+  /usr/include/mysql/my_list.h \
+  /usr/include/mysql/mysql.h \
+  /usr/include/mysql/mysql_com.h \
+  /usr/include/mysql/mysql_time.h \
+  /usr/include/mysql/mysql_version.h \
+  /usr/include/mysql/plugin_auth_common.h \
+  /usr/include/mysql/udf_registration_types.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/once_flag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h
+
 CMakeFiles/server.dir/src/mystring.c.o: /home/lrd/C_C++_programs/20_test/project/server/src/mystring.c \
   /usr/include/stdc-predef.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h
@@ -1002,6 +1105,7 @@ CMakeFiles/server.dir/src/server_1112.c.o: /home/lrd/C_C++_programs/20_test/proj
   /home/lrd/C_C++_programs/20_test/project/server/include/kalman.h \
   /home/lrd/C_C++_programs/20_test/project/server/include/matrix.h \
   /home/lrd/C_C++_programs/20_test/project/server/include/matrix2.h \
+  /home/lrd/C_C++_programs/20_test/project/server/include/mysql_db.h \
   /home/lrd/C_C++_programs/20_test/project/server/include/mystring.h \
   /home/lrd/C_C++_programs/20_test/project/server/include/peizhun_while_dabao.h \
   /home/lrd/C_C++_programs/20_test/project/server/include/pinghua.h \
@@ -1024,6 +1128,18 @@ CMakeFiles/server.dir/src/server_1112.c.o: /home/lrd/C_C++_programs/20_test/proj
   /usr/include/linux/posix_types.h \
   /usr/include/linux/stddef.h \
   /usr/include/math.h \
+  /usr/include/mysql/client_plugin.h \
+  /usr/include/mysql/errmsg.h \
+  /usr/include/mysql/field_types.h \
+  /usr/include/mysql/my_command.h \
+  /usr/include/mysql/my_compress.h \
+  /usr/include/mysql/my_list.h \
+  /usr/include/mysql/mysql.h \
+  /usr/include/mysql/mysql_com.h \
+  /usr/include/mysql/mysql_time.h \
+  /usr/include/mysql/mysql_version.h \
+  /usr/include/mysql/plugin_auth_common.h \
+  /usr/include/mysql/udf_registration_types.h \
   /usr/include/netinet/in.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
@@ -1117,6 +1233,7 @@ CMakeFiles/server.dir/src/server_1112.c.o: /home/lrd/C_C++_programs/20_test/proj
   /usr/include/x86_64-linux-gnu/sys/time.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h
 
@@ -1333,10 +1450,6 @@ CMakeFiles/server.dir/src/weight_fusion.c.o: /home/lrd/C_C++_programs/20_test/pr
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
-/usr/include/x86_64-linux-gnu/sys/socket.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
@@ -1375,6 +1488,28 @@ CMakeFiles/server.dir/src/weight_fusion.c.o: /home/lrd/C_C++_programs/20_test/pr
 
 /home/lrd/C_C++_programs/20_test/project/server/src/peizhun_while_dabao.c:
 
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h:
+
+/usr/include/mysql/plugin_auth_common.h:
+
+/usr/include/mysql/mysql_version.h:
+
+/usr/include/mysql/mysql_time.h:
+
+/usr/include/mysql/mysql.h:
+
+/usr/include/mysql/my_compress.h:
+
+/usr/include/mysql/my_command.h:
+
+/usr/include/mysql/errmsg.h:
+
+/usr/include/x86_64-linux-gnu/sys/socket.h:
+
+/usr/include/mysql/client_plugin.h:
+
+/home/lrd/C_C++_programs/20_test/project/server/src/mysql_db.c:
+
 /home/lrd/C_C++_programs/20_test/project/server/src/kalman.c:
 
 /home/lrd/C_C++_programs/20_test/project/server/src/jiema.c:
@@ -1384,6 +1519,8 @@ CMakeFiles/server.dir/src/weight_fusion.c.o: /home/lrd/C_C++_programs/20_test/pr
 /home/lrd/C_C++_programs/20_test/project/server/src/imm.c:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/mysql/udf_registration_types.h:
 
 /home/lrd/C_C++_programs/20_test/project/server/src/dec2bin.c:
 
@@ -1395,25 +1532,21 @@ CMakeFiles/server.dir/src/weight_fusion.c.o: /home/lrd/C_C++_programs/20_test/pr
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/alloca.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/home/lrd/C_C++_programs/20_test/project/server/include/unit_conversion.h:
+/home/lrd/C_C++_programs/20_test/project/server/src/time_registration.c:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so:
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-CMakeFiles/server.dir/src/mystring.c.o:
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/home/lrd/C_C++_programs/20_test/project/server/include/type.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /home/lrd/C_C++_programs/20_test/project/server/include/kalman.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/stdc-predef.h:
-
-/home/lrd/C_C++_programs/20_test/project/server/include/start.h:
 
 /home/lrd/C_C++_programs/20_test/project/server/include/dec2bin.h:
 
@@ -1421,15 +1554,13 @@ CMakeFiles/server.dir/src/mystring.c.o:
 
 /home/lrd/C_C++_programs/20_test/project/server/include/constant.h:
 
-/home/lrd/C_C++_programs/20_test/project/server/src/analysis_xml.c:
+/usr/include/mysql/field_types.h:
 
-/usr/lib/x86_64-linux-gnu/libc.so.6:
+/home/lrd/C_C++_programs/20_test/project/server/src/analysis_xml.c:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
-
-/home/lrd/C_C++_programs/20_test/project/server/include/mystring.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -1447,6 +1578,12 @@ CMakeFiles/server.dir/src/tool.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
+/home/lrd/C_C++_programs/20_test/project/server/include/mystring.h:
+
+/usr/lib/x86_64-linux-gnu/libz.so.1:
+
+/usr/include/alloca.h:
+
 /home/lrd/C_C++_programs/20_test/project/server/include/interfere.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h:
@@ -1460,6 +1597,12 @@ CMakeFiles/server.dir/src/server_1112.c.o:
 /home/lrd/C_C++_programs/20_test/project/server/include/coord_trans.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/home/lrd/C_C++_programs/20_test/project/server/include/peizhun_while_dabao.h:
+
+CMakeFiles/server.dir/src/peizhun_while_dabao.c.o:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
 
 /usr/lib/x86_64-linux-gnu/libm.so:
 
@@ -1475,15 +1618,51 @@ CMakeFiles/server.dir/src/server_1112.c.o:
 
 /usr/include/string.h:
 
-/home/lrd/C_C++_programs/20_test/project/server/include/weight_fusion.h:
-
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /home/lrd/C_C++_programs/20_test/project/server/include/dongtaicunchu.h:
 
+/usr/lib/x86_64-linux-gnu/libc.so.6:
+
+/usr/lib/x86_64-linux-gnu/libssl.so.3:
+
 /home/lrd/C_C++_programs/20_test/project/server/include/pinghua.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+CMakeFiles/server.dir/src/pinghua.c.o:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/lib/x86_64-linux-gnu/libmysqlclient.so:
+
+CMakeFiles/server.dir/src/matrix2.c.o:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o:
+
+/usr/lib/x86_64-linux-gnu/libstdc++.so.6:
+
+/home/lrd/C_C++_programs/20_test/project/server/include/jiema.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so:
+
+CMakeFiles/server.dir/src/mystring.c.o:
+
+/usr/lib/x86_64-linux-gnu/libcrypto.so.3:
+
+/home/lrd/C_C++_programs/20_test/project/server/include/unit_conversion.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
+
+/usr/include/mysql/mysql_com.h:
+
+/home/lrd/C_C++_programs/20_test/project/server/include/matrix2.h:
+
+/usr/lib/x86_64-linux-gnu/Scrt1.o:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
@@ -1491,25 +1670,15 @@ CMakeFiles/server.dir/src/server_1112.c.o:
 
 /usr/lib/x86_64-linux-gnu/libc_nonshared.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o:
+/usr/include/netinet/in.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/home/lrd/C_C++_programs/20_test/project/server/include/peizhun_while_dabao.h:
+CMakeFiles/server.dir/src/matrix.c.o:
 
-CMakeFiles/server.dir/src/peizhun_while_dabao.c.o:
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
-
-/home/lrd/C_C++_programs/20_test/project/server/include/matrix2.h:
-
-/usr/lib/x86_64-linux-gnu/Scrt1.o:
-
-CMakeFiles/server.dir/src/jiema.c.o:
-
-/home/lrd/C_C++_programs/20_test/project/server/include/jiema.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
+/usr/lib/x86_64-linux-gnu/libzstd.so.1:
 
 /usr/lib/x86_64-linux-gnu/libmvec.so.1:
 
@@ -1517,23 +1686,11 @@ CMakeFiles/server.dir/src/jiema.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
+CMakeFiles/server.dir/src/jiema.c.o:
+
+/usr/lib/x86_64-linux-gnu/libm.so.6:
+
 CMakeFiles/server.dir/src/analysis_xml.c.o:
-
-/home/lrd/C_C++_programs/20_test/project/server/include/sensor_data.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/home/lrd/C_C++_programs/20_test/project/server/include/tool.h:
-
-CMakeFiles/server.dir/src/weight_fusion.c.o:
-
-CMakeFiles/server.dir/src/coord_trans.c.o:
-
-/home/lrd/C_C++_programs/20_test/project/server/include/type.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 CMakeFiles/server.dir/src/ici.c.o:
 
@@ -1545,15 +1702,45 @@ CMakeFiles/server.dir/src/dongtaicunchu.c.o:
 
 CMakeFiles/server.dir/src/interfere.c.o:
 
-/usr/lib/x86_64-linux-gnu/libm.so.6:
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-CMakeFiles/server.dir/src/pinghua.c.o:
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/home/lrd/C_C++_programs/20_test/project/server/include/sensor_data.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/home/lrd/C_C++_programs/20_test/project/server/include/time_registration.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/home/lrd/C_C++_programs/20_test/project/server/include/start.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+CMakeFiles/server.dir/src/weight_fusion.c.o:
+
+CMakeFiles/server.dir/src/mysql_db.c.o:
+
+CMakeFiles/server.dir/src/coord_trans.c.o:
+
+/home/lrd/C_C++_programs/20_test/project/server/include/tool.h:
+
+/home/lrd/C_C++_programs/20_test/project/server/include/weight_fusion.h:
 
 /usr/include/endian.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/features-time64.h:
+
+/usr/lib/x86_64-linux-gnu/libresolv.so.2:
 
 /usr/include/features.h:
 
@@ -1595,10 +1782,6 @@ CMakeFiles/server.dir/src/imm.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
@@ -1612,6 +1795,8 @@ CMakeFiles/server.dir/src/imm.c.o:
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/home/lrd/C_C++_programs/20_test/project/server/include/mysql_db.h:
 
 /home/lrd/C_C++_programs/20_test/project/server/include/matrix.h:
 
@@ -1641,6 +1826,8 @@ CMakeFiles/server.dir/src/dec2bin.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
+/usr/include/mysql/my_list.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /home/lrd/C_C++_programs/20_test/project/server/src/dongtaicunchu.c:
@@ -1650,16 +1837,6 @@ CMakeFiles/server.dir/src/dec2bin.c.o:
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-CMakeFiles/server.dir/src/matrix2.c.o:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/netinet/in.h:
-
-CMakeFiles/server.dir/src/matrix.c.o:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/asm-generic/socket.h:
 
@@ -1680,17 +1857,3 @@ CMakeFiles/server.dir/src/unit_conversion.c.o:
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/home/lrd/C_C++_programs/20_test/project/server/src/time_registration.c:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/home/lrd/C_C++_programs/20_test/project/server/include/time_registration.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:

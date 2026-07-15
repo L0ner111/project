@@ -226,10 +226,24 @@ CMakeFiles/server.dir/src/matrix2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/server.dir/src/matrix2.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lrd/C_C++_programs/20_test/project/server/src/matrix2.c -o CMakeFiles/server.dir/src/matrix2.c.s
 
+CMakeFiles/server.dir/src/mysql_db.c.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/mysql_db.c.o: /home/lrd/C_C++_programs/20_test/project/server/src/mysql_db.c
+CMakeFiles/server.dir/src/mysql_db.c.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/server.dir/src/mysql_db.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/mysql_db.c.o -MF CMakeFiles/server.dir/src/mysql_db.c.o.d -o CMakeFiles/server.dir/src/mysql_db.c.o -c /home/lrd/C_C++_programs/20_test/project/server/src/mysql_db.c
+
+CMakeFiles/server.dir/src/mysql_db.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/server.dir/src/mysql_db.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lrd/C_C++_programs/20_test/project/server/src/mysql_db.c > CMakeFiles/server.dir/src/mysql_db.c.i
+
+CMakeFiles/server.dir/src/mysql_db.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/server.dir/src/mysql_db.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lrd/C_C++_programs/20_test/project/server/src/mysql_db.c -o CMakeFiles/server.dir/src/mysql_db.c.s
+
 CMakeFiles/server.dir/src/mystring.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/mystring.c.o: /home/lrd/C_C++_programs/20_test/project/server/src/mystring.c
 CMakeFiles/server.dir/src/mystring.c.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/server.dir/src/mystring.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/server.dir/src/mystring.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/mystring.c.o -MF CMakeFiles/server.dir/src/mystring.c.o.d -o CMakeFiles/server.dir/src/mystring.c.o -c /home/lrd/C_C++_programs/20_test/project/server/src/mystring.c
 
 CMakeFiles/server.dir/src/mystring.c.i: cmake_force
@@ -243,7 +257,7 @@ CMakeFiles/server.dir/src/mystring.c.s: cmake_force
 CMakeFiles/server.dir/src/peizhun_while_dabao.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/peizhun_while_dabao.c.o: /home/lrd/C_C++_programs/20_test/project/server/src/peizhun_while_dabao.c
 CMakeFiles/server.dir/src/peizhun_while_dabao.c.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/server.dir/src/peizhun_while_dabao.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/server.dir/src/peizhun_while_dabao.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/peizhun_while_dabao.c.o -MF CMakeFiles/server.dir/src/peizhun_while_dabao.c.o.d -o CMakeFiles/server.dir/src/peizhun_while_dabao.c.o -c /home/lrd/C_C++_programs/20_test/project/server/src/peizhun_while_dabao.c
 
 CMakeFiles/server.dir/src/peizhun_while_dabao.c.i: cmake_force
@@ -257,7 +271,7 @@ CMakeFiles/server.dir/src/peizhun_while_dabao.c.s: cmake_force
 CMakeFiles/server.dir/src/pinghua.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/pinghua.c.o: /home/lrd/C_C++_programs/20_test/project/server/src/pinghua.c
 CMakeFiles/server.dir/src/pinghua.c.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/server.dir/src/pinghua.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/server.dir/src/pinghua.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/pinghua.c.o -MF CMakeFiles/server.dir/src/pinghua.c.o.d -o CMakeFiles/server.dir/src/pinghua.c.o -c /home/lrd/C_C++_programs/20_test/project/server/src/pinghua.c
 
 CMakeFiles/server.dir/src/pinghua.c.i: cmake_force
@@ -271,7 +285,7 @@ CMakeFiles/server.dir/src/pinghua.c.s: cmake_force
 CMakeFiles/server.dir/src/server_1112.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/server_1112.c.o: /home/lrd/C_C++_programs/20_test/project/server/src/server_1112.c
 CMakeFiles/server.dir/src/server_1112.c.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/server.dir/src/server_1112.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/server.dir/src/server_1112.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/server_1112.c.o -MF CMakeFiles/server.dir/src/server_1112.c.o.d -o CMakeFiles/server.dir/src/server_1112.c.o -c /home/lrd/C_C++_programs/20_test/project/server/src/server_1112.c
 
 CMakeFiles/server.dir/src/server_1112.c.i: cmake_force
@@ -285,7 +299,7 @@ CMakeFiles/server.dir/src/server_1112.c.s: cmake_force
 CMakeFiles/server.dir/src/time_registration.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/time_registration.c.o: /home/lrd/C_C++_programs/20_test/project/server/src/time_registration.c
 CMakeFiles/server.dir/src/time_registration.c.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/server.dir/src/time_registration.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/server.dir/src/time_registration.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/time_registration.c.o -MF CMakeFiles/server.dir/src/time_registration.c.o.d -o CMakeFiles/server.dir/src/time_registration.c.o -c /home/lrd/C_C++_programs/20_test/project/server/src/time_registration.c
 
 CMakeFiles/server.dir/src/time_registration.c.i: cmake_force
@@ -299,7 +313,7 @@ CMakeFiles/server.dir/src/time_registration.c.s: cmake_force
 CMakeFiles/server.dir/src/tool.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/tool.c.o: /home/lrd/C_C++_programs/20_test/project/server/src/tool.c
 CMakeFiles/server.dir/src/tool.c.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/server.dir/src/tool.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/server.dir/src/tool.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/tool.c.o -MF CMakeFiles/server.dir/src/tool.c.o.d -o CMakeFiles/server.dir/src/tool.c.o -c /home/lrd/C_C++_programs/20_test/project/server/src/tool.c
 
 CMakeFiles/server.dir/src/tool.c.i: cmake_force
@@ -313,7 +327,7 @@ CMakeFiles/server.dir/src/tool.c.s: cmake_force
 CMakeFiles/server.dir/src/unit_conversion.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/unit_conversion.c.o: /home/lrd/C_C++_programs/20_test/project/server/src/unit_conversion.c
 CMakeFiles/server.dir/src/unit_conversion.c.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/server.dir/src/unit_conversion.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/server.dir/src/unit_conversion.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/unit_conversion.c.o -MF CMakeFiles/server.dir/src/unit_conversion.c.o.d -o CMakeFiles/server.dir/src/unit_conversion.c.o -c /home/lrd/C_C++_programs/20_test/project/server/src/unit_conversion.c
 
 CMakeFiles/server.dir/src/unit_conversion.c.i: cmake_force
@@ -327,7 +341,7 @@ CMakeFiles/server.dir/src/unit_conversion.c.s: cmake_force
 CMakeFiles/server.dir/src/weight_fusion.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/weight_fusion.c.o: /home/lrd/C_C++_programs/20_test/project/server/src/weight_fusion.c
 CMakeFiles/server.dir/src/weight_fusion.c.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/server.dir/src/weight_fusion.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/server.dir/src/weight_fusion.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/weight_fusion.c.o -MF CMakeFiles/server.dir/src/weight_fusion.c.o.d -o CMakeFiles/server.dir/src/weight_fusion.c.o -c /home/lrd/C_C++_programs/20_test/project/server/src/weight_fusion.c
 
 CMakeFiles/server.dir/src/weight_fusion.c.i: cmake_force
@@ -351,6 +365,7 @@ server_OBJECTS = \
 "CMakeFiles/server.dir/src/kalman.c.o" \
 "CMakeFiles/server.dir/src/matrix.c.o" \
 "CMakeFiles/server.dir/src/matrix2.c.o" \
+"CMakeFiles/server.dir/src/mysql_db.c.o" \
 "CMakeFiles/server.dir/src/mystring.c.o" \
 "CMakeFiles/server.dir/src/peizhun_while_dabao.c.o" \
 "CMakeFiles/server.dir/src/pinghua.c.o" \
@@ -374,6 +389,7 @@ server_EXTERNAL_OBJECTS =
 /home/lrd/C_C++_programs/20_test/project/server/bin/server: CMakeFiles/server.dir/src/kalman.c.o
 /home/lrd/C_C++_programs/20_test/project/server/bin/server: CMakeFiles/server.dir/src/matrix.c.o
 /home/lrd/C_C++_programs/20_test/project/server/bin/server: CMakeFiles/server.dir/src/matrix2.c.o
+/home/lrd/C_C++_programs/20_test/project/server/bin/server: CMakeFiles/server.dir/src/mysql_db.c.o
 /home/lrd/C_C++_programs/20_test/project/server/bin/server: CMakeFiles/server.dir/src/mystring.c.o
 /home/lrd/C_C++_programs/20_test/project/server/bin/server: CMakeFiles/server.dir/src/peizhun_while_dabao.c.o
 /home/lrd/C_C++_programs/20_test/project/server/bin/server: CMakeFiles/server.dir/src/pinghua.c.o
@@ -385,7 +401,7 @@ server_EXTERNAL_OBJECTS =
 /home/lrd/C_C++_programs/20_test/project/server/bin/server: CMakeFiles/server.dir/build.make
 /home/lrd/C_C++_programs/20_test/project/server/bin/server: CMakeFiles/server.dir/compiler_depend.ts
 /home/lrd/C_C++_programs/20_test/project/server/bin/server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable /home/lrd/C_C++_programs/20_test/project/server/bin/server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking C executable /home/lrd/C_C++_programs/20_test/project/server/bin/server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

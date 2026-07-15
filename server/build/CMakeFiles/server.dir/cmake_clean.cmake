@@ -24,6 +24,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/src/matrix.c.o.d"
   "CMakeFiles/server.dir/src/matrix2.c.o"
   "CMakeFiles/server.dir/src/matrix2.c.o.d"
+  "CMakeFiles/server.dir/src/mysql_db.c.o"
+  "CMakeFiles/server.dir/src/mysql_db.c.o.d"
   "CMakeFiles/server.dir/src/mystring.c.o"
   "CMakeFiles/server.dir/src/mystring.c.o.d"
   "CMakeFiles/server.dir/src/peizhun_while_dabao.c.o"
