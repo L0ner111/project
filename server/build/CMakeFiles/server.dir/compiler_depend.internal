@@ -9,24 +9,16 @@
  /usr/lib/x86_64-linux-gnu/libc.so
  /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
  /usr/lib/x86_64-linux-gnu/libm.so
- /usr/lib/x86_64-linux-gnu/libmysqlclient.so
  /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o
  /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o
  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a
  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so
  /usr/lib/x86_64-linux-gnu/libc.so.6
  /usr/lib/x86_64-linux-gnu/libc_nonshared.a
- /usr/lib/x86_64-linux-gnu/libcrypto.so.3
  /usr/lib/x86_64-linux-gnu/libm.so.6
  /usr/lib/x86_64-linux-gnu/libmvec.so.1
- /usr/lib/x86_64-linux-gnu/libresolv.so.2
- /usr/lib/x86_64-linux-gnu/libssl.so.3
- /usr/lib/x86_64-linux-gnu/libstdc++.so.6
- /usr/lib/x86_64-linux-gnu/libz.so.1
- /usr/lib/x86_64-linux-gnu/libzstd.so.1
  /home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles/server.dir/src/analysis_xml.c.o
  /home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles/server.dir/src/coord_trans.c.o
- /home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles/server.dir/src/db.c.o
  /home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles/server.dir/src/dec2bin.c.o
  /home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles/server.dir/src/dongtaicunchu.c.o
  /home/lrd/C_C++_programs/20_test/project/server/build/CMakeFiles/server.dir/src/ici.c.o
@@ -1017,7 +1009,6 @@ CMakeFiles/server.dir/src/server_1112.c.o
  /home/lrd/C_C++_programs/20_test/project/server/include/config.h
  /home/lrd/C_C++_programs/20_test/project/server/include/constant.h
  /home/lrd/C_C++_programs/20_test/project/server/include/coord_trans.h
- /home/lrd/C_C++_programs/20_test/project/server/include/db.h
  /home/lrd/C_C++_programs/20_test/project/server/include/dec2bin.h
  /home/lrd/C_C++_programs/20_test/project/server/include/dongtaicunchu.h
  /home/lrd/C_C++_programs/20_test/project/server/include/ici.h
@@ -1049,18 +1040,6 @@ CMakeFiles/server.dir/src/server_1112.c.o
  /usr/include/linux/posix_types.h
  /usr/include/linux/stddef.h
  /usr/include/math.h
- /usr/include/mysql/client_plugin.h
- /usr/include/mysql/errmsg.h
- /usr/include/mysql/field_types.h
- /usr/include/mysql/my_command.h
- /usr/include/mysql/my_compress.h
- /usr/include/mysql/my_list.h
- /usr/include/mysql/mysql.h
- /usr/include/mysql/mysql_com.h
- /usr/include/mysql/mysql_time.h
- /usr/include/mysql/mysql_version.h
- /usr/include/mysql/plugin_auth_common.h
- /usr/include/mysql/udf_registration_types.h
  /usr/include/netinet/in.h
  /usr/include/stdc-predef.h
  /usr/include/stdint.h
@@ -1154,7 +1133,6 @@ CMakeFiles/server.dir/src/server_1112.c.o
  /usr/include/x86_64-linux-gnu/sys/time.h
  /usr/include/x86_64-linux-gnu/sys/types.h
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h
- /usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h
 
